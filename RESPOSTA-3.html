@@ -22,13 +22,15 @@
   </style>
   <script>
     function exibirMensagem() {
-      document.getElementById("mensagem").innerHTML = "Parabéns, sua namorada está em greve. Para que ela saia da greve, você deverá comprar um chocolatinho!";
+      const mensagemElement = document.getElementById("mensagem");
+      mensagemElement.textContent = "LAMBE MEU COOL";
+      mensagemElement.style.display = "block";
     }
   </script>
 </head>
 <body>
-  <h1>Clica aqui, delicinha</h1>
+  <h1>Clique aqui!</h1>
   <button onclick="exibirMensagem()">Clique Aqui</button>
-  <p id="mensagem"></p>
+  <p id="mensagem" style="display: none;"></p>
 </body>
 </html>
