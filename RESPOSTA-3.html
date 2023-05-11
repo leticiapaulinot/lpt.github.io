@@ -2,11 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Aviso: conteúdo sensível</title>
+  <title>IMPORTANTE</title>
   <style>
     body {
       background-color: black;
-      color: yellow;
+      color: white;
     }
     
     button {
@@ -15,22 +15,20 @@
     }
     
     #mensagem {
-      font-size: 24px;
+      font-size: 50px;
       color: red;
       font-weight: bold;
     }
   </style>
   <script>
     function exibirMensagem() {
-      const mensagemElement = document.getElementById("mensagem");
-      mensagemElement.textContent = "LAMBE MEU COOL";
-      mensagemElement.style.display = "block";
+      document.getElementById("mensagem").innerHTML = "VASCO";
     }
   </script>
 </head>
 <body>
-  <h1>Clique aqui!</h1>
+  <h1>Qual melhor time do mundo?</h1>
   <button onclick="exibirMensagem()">Clique Aqui</button>
-  <p id="mensagem" style="display: none;"></p>
+  <p id="mensagem"></p>
 </body>
 </html>
