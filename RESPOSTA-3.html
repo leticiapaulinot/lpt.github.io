@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Aviso: conteúdo sensível</title>
+  <style>
+    body {
+      background-color: black;
+      color: yellow;
+    }
+    
+    button {
+      background-color: red;
+      color: white;
+    }
+    
+    #mensagem {
+      font-size: 24px;
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function exibirMensagem() {
+      document.getElementById("mensagem").innerHTML = "Parabéns, sua namorada está em greve. Para que ela saia da greve, você deverá comprar um chocolatinho!";
+    }
+  </script>
+</head>
+<body>
+  <h1>Clica aqui, delicinha</h1>
+  <button onclick="exibirMensagem()">Clique Aqui</button>
+  <p id="mensagem"></p>
+</body>
+</html>
